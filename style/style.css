@@ -36,7 +36,6 @@ h5 {
 
 .navbar-brand:hover {
     color: #214001;
-    font-size:smaller;
 }
 
 .navbar .navbar-nav {
@@ -67,7 +66,7 @@ h5 {
 /* Sobre */
 
 .sobre {
-    margin-top: 50px;
+    margin-top: 80px;
 }
 
 .sobre-intro .container-sobre {
@@ -108,7 +107,7 @@ h5 {
 /* Missão */
 
 .missao {
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 .missao-section {
@@ -123,7 +122,7 @@ h5 {
 }
 
 .missao-section:hover {
-    background-color:#214001;
+    background-color:#2E5902;
 }
 
 .missao-section h2 {
@@ -140,7 +139,7 @@ h5 {
 /* Visão */
 
 .visao {
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 .visao-section {
@@ -155,7 +154,7 @@ h5 {
 }
 
 .visao-section:hover {
-    background-color:#214001;
+    background-color:#2E5902;
 }
 
 .visao-section h2 {
@@ -172,7 +171,7 @@ h5 {
 /* Valores */
 
 .valores {
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 .valores-section {
@@ -187,7 +186,7 @@ h5 {
 }
 
 .valores-section:hover {
-    background-color:#214001;
+    background-color:#2E5902;
 }
 
 .valores-section h2 {
@@ -294,14 +293,28 @@ h5 {
 .container-footer p {
     margin-bottom: 0;
     font-size: 10px;
-    transition: .5s linear;
+    color:#2E5902
 }
 
-.container-footer:hover p {
-    color: #71A64B;
+/* Animação blocos */
+
+@keyframes appear{
+    from{
+        opacity: 0;
+        transform: translateX(-100px)
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0px)
+    }
 }
 
-
+.block {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
 
 
 
